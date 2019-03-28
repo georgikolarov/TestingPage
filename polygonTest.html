@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section id="header">
+        <div class="feature1">
+            <div class="about">
+                <div class="image" style="background-image: url('img/bckg_header.jpg')"></div>
+                <div class="container">
+                    <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et non deserunt
+                        eligendi,
+                        officiis harum adipisci ab rem ipsa doloribus illo? Necessitatibus similique aliquid earum odit
+                        rerum
+                        totam veritatis quisquam at?</div>
+                </div>
+            </div>
+        </div>
+        <div class="feature2">
+        </div>
+    </section>
+    <section id="main">
+
+    </section>
+    <section id="footer">
+
+    </section>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
+
+// css
+
+.feature1 {
+position: relative;
+}
+
+.feature1 .about .image {
+float: right;
+background-size: cover !important;
+background-position: bottom center !important;
+}
+
+@supports (clip-path: polygon(0 0, 0 0, 0 0)) or (-webkit-clip-path: polygon(0 0, 0 0, 0 0)) or (shape-outside:
+polygon(0 0, 0 0, 0 0)) or (-webkit-shape-outside: polygon(0 0, 0 0, 0 0)) {
+.feature1 .image {
+
+width: calc(50% + 74px);
+margin-top: 0;
+height: 900px;
+clip-path: polygon(100% 0, 100% 100%, 0 100%);
+-webkit-clip-path: polygon(100% -79%, 100% 100%, 0 100%);
+shape-outside: polygon(80% -27%, 100% 100%, -4% 100%);
+-webkit-shape-outside: polygon(80% -27%, 100% 100%, -4% 100%);
+}
+
+}
