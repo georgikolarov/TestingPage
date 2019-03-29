@@ -11,22 +11,13 @@
 </head>
 
 <body>
-    <section id="header">
-        <div class="feature1">
-            <div class="about">
-                <div class="image" style="background-image: url('img/bckg_header.jpg')"></div>
-                <div class="container">
-                    <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et non deserunt
-                        eligendi,
-                        officiis harum adipisci ab rem ipsa doloribus illo? Necessitatibus similique aliquid earum odit
-                        rerum
-                        totam veritatis quisquam at?</div>
-                </div>
-            </div>
-        </div>
-        <div class="feature2">
-        </div>
+    <section id="header" style="background-image: url('img/bckg_header.jpg')">
     </section>
+
+
+
+
+
     <section id="main">
 
     </section>
@@ -44,28 +35,22 @@
 </html>
 
 // css
-
-.feature1 {
-position: relative;
+@supports (clip-path: polygon(0 0, 0 0, 0 0)) or (-webkit-clip-path: polygon(0 0, 0 0, 0 0)) or (shape-outside:
+polygon(0 0, 0 0, 0 0)) or (-webkit-shape-outside: polygon(0 0, 0 0, 0 0)) {
+#header {
+width: calc(90% + 200px);
+margin-top: -160px;
+height: 900px;
+clip-path: polygon(64% 0, 344% 100%, 0 155%);
+-webkit-clip-path: polygon(64% 0, 344% 100%, 0 155%);
+// shape-outside: polygon(96% -27%, 100% 100%, -4% 100%);
+//-webkit-shape-outside: polygon(96% -27%, 100% 100%, -4% 100%);
 }
 
-.feature1 .about .image {
+}
+
+#header {
 float: right;
 background-size: cover !important;
 background-position: bottom center !important;
-}
-
-@supports (clip-path: polygon(0 0, 0 0, 0 0)) or (-webkit-clip-path: polygon(0 0, 0 0, 0 0)) or (shape-outside:
-polygon(0 0, 0 0, 0 0)) or (-webkit-shape-outside: polygon(0 0, 0 0, 0 0)) {
-.feature1 .image {
-
-width: calc(50% + 74px);
-margin-top: 0;
-height: 900px;
-clip-path: polygon(100% 0, 100% 100%, 0 100%);
--webkit-clip-path: polygon(100% -79%, 100% 100%, 0 100%);
-shape-outside: polygon(80% -27%, 100% 100%, -4% 100%);
--webkit-shape-outside: polygon(80% -27%, 100% 100%, -4% 100%);
-}
-
 }

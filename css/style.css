@@ -3,13 +3,57 @@ body {
 }
 
 #header {
-  background-image: url("../img/bckg_header.jpg");
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
+  background: #333;
   height: 900px;
 }
 
-#main {
-  background-color: #ccc;
-  width: 100%;
-  height: 200px;
+/*
+#header::before {
+    position: absolute;
+    content: " ";
+    width: 464px;
+    height: 900px;
+    top: 217px;
+    left: calc(50% - 38px);
+    transform: translateX(0) translateY(0) rotate(45deg);
+    background: #fff;
+    transform-origin: left top;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fafafa;
+    background: #fafafa;
+    z-index: 1;
+}*/
+#header::after {
+  position: absolute;
+  content: " ";
+  width: 464px;
+  height: 900px;
+  top: 217px;
+  left: calc(50% - 38px);
+  -webkit-transform: translateX(0) translateY(0) rotate(45deg);
+          transform: translateX(0) translateY(0) rotate(45deg);
+  background: #fff;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  border-left: 1px solid #fff;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fafafa;
+  background: #fafafa;
+  z-index: 1;
+}
+
+#header::after {
+  width: 2460px;
+  height: 2460px;
+  top: 50%;
+  left: calc(50% + 500px);
+  -webkit-transform: translateX(0) translateY(-50%) rotate(35deg);
+          transform: translateX(0) translateY(-50%) rotate(35deg);
+  border: 1px solid #fff;
+  z-index: 1;
 }
 /*# sourceMappingURL=style.css.map */
