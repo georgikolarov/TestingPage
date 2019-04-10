@@ -3,7 +3,7 @@ body {
 }
 
 /* button - WINONA */
-.btn-winona {
+.btn-winona1 {
     display: inline-block;
     position: relative;
     overflow: hidden;
@@ -14,7 +14,22 @@ body {
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 
-.btn-winona:hover {
+.btn-winona1:hover {
+    background-color: #434857;
+}
+
+.btn-winona2 {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background: #41e0d8;
+    text-decoration: none !important;
+    backface-visibility: hidden;
+    transition: border-color 0.3s, background-color 0.3s;
+    transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.btn-winona2:hover {
     background-color: #434857;
 }
 
@@ -37,7 +52,7 @@ body {
 .btn-winona::after,
 .btn-winona>span {
     color: #fafafa;
-    padding: 10px 30px;
+    padding: 12px 25px;
     text-transform: uppercase;
     transition: transform 0.3s, opacity 0.3s;
     transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
@@ -155,10 +170,88 @@ body {
 }
 
 //MAIN - Container
+.test {
+    flex-direction: column;
+    align-self: center
+}
+
 #main {
     background: #262a34;
     height: 860px;
     z-index: 3;
+
+    .contLeft {
+        color: #fff;
+
+        h2 {
+            font-size: 43px;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .slider {
+        .box {
+            width: 230px;
+            height: 404px;
+            background: #3f4551;
+        }
+
+        .owl-item {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .owl-dots {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            .owl-dot.active {
+                background: #fff;
+                border-radius: 50%;
+            }
+
+            .owl-dot {
+                display: inline-block;
+
+                span {
+                    width: 15px;
+                    height: 15px;
+                    background: transparent;
+                    border: 2px solid #fff;
+                    display: block;
+                    border-radius: 50%;
+                }
+
+                span:active {
+                    background: #fff;
+                }
+            }
+
+
+
+            .owl-dot:hover {
+                background: #fff;
+                border-radius: 50%;
+            }
+
+            button.owl-dot {
+                background: 0 0;
+                color: inherit;
+                border: none;
+                padding: 0 !important;
+                font: inherit;
+            }
+        }
+
+        .owl-dots .owl-dot:focus {
+            outline: 0;
+        }
+    }
 }
 
 
@@ -187,6 +280,12 @@ body {
                     padding-bottom: 20px;
                 }
             }
+        }
+    }
+
+    #main {
+        .contLeft {
+            margin-bottom: 30px;
         }
     }
 
