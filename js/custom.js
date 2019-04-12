@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
+    $('.test1').owlCarousel({
         loop: true,
         dots: true,
         autoplay: true,
@@ -15,6 +15,22 @@ $(document).ready(function () {
                 items: 2
             }
         }
-    })
-
+    });
+    $('.test2').owlCarousel({
+        loop: true,
+        dots: true,
+        autoplay: true,
+        autoplayTimeout: 6000,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
 });
