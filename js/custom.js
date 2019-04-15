@@ -34,3 +34,18 @@ $(document).ready(function () {
         }
     });
 });
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById('toTopBtn').style.display = "block";
+  } else {
+    document.getElementById('toTopBtn').style.display = "none";
+  }
+}
+
+function toTopFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
